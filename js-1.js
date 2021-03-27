@@ -77,15 +77,107 @@
 
 // console.log(namesNormalized);
 // /////////////// ///////////////
-let total = 0;
-const num1 = [1, 2, 3];
-const num2 = [4, 5, 6];
+// let total = 0;
+// const num1 = [1, 2, 3];
+// const num2 = [4, 5, 6];
 
-const num3 = [...num1, ...num2];
-for (const num of num3) {
-  total += num;
+// const num3 = [...num1, ...num2];
+// for (const num of num3) {
+//   total += num;
+// }
+
+// console.log(total);
+// num1.splice(3, 0, 4, 5, 6);
+// console.log(num1);
+
+// const pricePerDroid = 800;
+// const orderedQuantity = 6;
+// const deliveryFee = 50;
+// const totalPrice = pricePerDroid * orderedQuantity + deliveryFee;
+// const message = `Вы заказали ${orderedQuantity} дроидов на сумму ${totalPrice} кредитов. Доставка (${deliveryFee} кредитов) включена в сумму заказа.`;
+// console.log(message);
+// function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+//   let message;
+//   // Пиши код ниже этой строки
+//   const totalPrice = pricePerDroid * orderedQuantity;
+//   if (totalPrice > customerCredits) {
+//     message = "Недостаточно средств на счету!";
+//   } else {
+//     message = `Вы купили ${orderedQuantity} дроидов, на счету осталось ${
+//       customerCredits - totalPrice
+//     } кредитов.`;
+
+//     // Пиши код выше этой строки
+//   }
+//   return message;
+// }
+// console.log(makeTransaction(1000, 3, 15000));
+// function getDiscount(totalSpent) {
+//   const BASE_DISCOUNT = 0;
+//   const BRONZE_DISCOUNT = 0.02;
+//   const SILVER_DISCOUNT = 0.05;
+//   const GOLD_DISCOUNT = 0.1;
+//   let discount = 0;
+//   // Пиши код ниже этой строки
+//   if (totalSpent > 50000) {
+//     discount === GOLD_DISCOUNT;
+//   }
+//   if (totalSpent <= 50000 && totalSpent >= 20000) {
+//     discount === SILVER_DISCOUNT;
+//   }
+//   if (totalSpent >= 5000 && totalSpent <= 20000) {
+//     discount === BRONZE_DISCOUNT;
+//   }
+
+//   // Пиши код выше этой строки
+//   return discount;
+// }
+// console.log(getDiscount(50000));
+
+// switch
+// function getShippingCost(country) {
+//   let message;
+//   // Пиши код ниже этой строки
+//   switch (country) {
+//     case "Австралия":
+//       message = "Доставка в Австралия будет стоить 170 кредитов";
+//       break;
+//     case "Китай":
+//       message = "Доставка в Китай будет стоить 100 кредитов";
+//       break;
+//     case "Чили":
+//       message = "Доставка в Чили будет стоить 250 кредитов";
+//       break;
+//     case "Ямайка":
+//       message = "Доставка в Ямайка будет стоить 120 кредитов";
+//       break;
+//     default:
+//       message = "Извините, в вашу страну доставки нет";
+//   }
+//   // Пиши код выше этой строки
+//   return message;
+// }
+// switch
+
+//slice
+// function getSubstring(string, length) {
+//   const substring = string.slice(string[0], length); // Дополни эту строку
+
+//   return substring;
+// }
+///
+function formatMessage(message, maxLength) {
+  let result;
+  //   Пиши код ниже этой строки
+  result =
+    message.length > maxLength
+      ? message.slice(0, maxLength.length) + "..."
+      : message;
+
+  // Пиши код выше этой строки
+  return result;
 }
 
-console.log(total);
-num1.splice(3, 0, 4, 5, 6);
-console.log(num1);
+console.log(formatMessage("Curabitur ligula sapien", 23));
+console.log(formatMessage("Vestibulum facilisis purus nec", 20));
+console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15));
