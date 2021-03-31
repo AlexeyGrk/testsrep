@@ -166,18 +166,145 @@
 //   return substring;
 // }
 ///
-function formatMessage(message, maxLength) {
-  let result;
-  //   Пиши код ниже этой строки
-  result =
-    message.length > maxLength
-      ? message.slice(0, maxLength.length) + "..."
-      : message;
+// function formatMessage(message, maxLength) {
+//   let result;
 
-  // Пиши код выше этой строки
-  return result;
+//   result =
+//     message.length > maxLength
+//       ? message.slice(0, maxLength.length) + "..."
+//       : message;
+
+//   return result;
+// }
+
+// console.log(formatMessage("Curabitur ligula sapien", 23));
+// console.log(formatMessage("Vestibulum facilisis purus nec", 20));
+// console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15));
+// function getExtremeElements(array) {
+//   // Пиши код ниже этой строки
+//   const clearArray = [];
+//   clearArray.push(array[0], array[array.length - 1]);
+//   return clearArray;
+// }
+// console.log(getExtremeElements(["яблоко", "персик", "груша", "банан"]));
+
+// function calculateEngravingPrice(message, pricePerWord) {
+//   const longerMessage = message.split(" ");
+//   const howManywords = longerMessage.length;
+//   // Пиши код ниже этой строки
+//   // Пиши код выше этой строки
+//   return howManywords * pricePerWord;
+// }
+// console.log(calculateEngravingPrice("JavaScript у меня в крови", 10));
+
+// function slugify(title) {
+//   // Пиши код ниже этой строки
+
+//   const normalizedTitle = title.toLowerCase();
+//   return normalizedTitle.split(" ").join("-");
+// }
+// console.log(slugify("Английский для разработчика"));
+
+// function makeArray(firstArray, secondArray, maxLength) {
+//   // Пиши код ниже этой строки
+//   const generalArray = firstArray.concat(secondArray);
+//   if (generalArray.length >= maxLength) {
+//     return generalArray.slice(0, maxLength);
+//   } else {
+//     return generalArray.slice(0);
+//   }
+// }
+// console.log(makeArray(["Земля", "Юпитер"], ["Нептун", "Уран"], 4));
+// console.log(makeArray(["Земля", "Юпитер"], ["Нептун", "Уран"], 2));
+
+////////   Функция для суммы по предыдущим числам по 1+2+3+4+5+6+7 ////////
+
+// function calculateTotal(number) {
+//   let summ = 0;
+//   for (let i = 0; i <= number; i += 1) {
+//     summ += i;
+//   }
+
+//   return summ;
+// }
+// console.log(calculateTotal(1));
+// console.log(calculateTotal(7));
+// console.log(calculateTotal(17));
+// console.log(calculateTotal(18));
+////////   Функция для суммы по предыдущим числам по 1+2+3+4+5+6+7 ////////
+
+////////   Перебор в переменной по индексу из массива ////////
+// const fruits = ["яблоко", "слива", "груша", "апельсин"];
+
+// for (let i = 0; i <= fruits.length - 1; i += 1) {
+//   const fruit = fruits[i];
+//   console.log(fruit);
+// }
+////////   Перебор в переменной по индексу из массива ////////
+
+/// Поиск самого длинного слова в строке без sort() /////
+
+// function findLongestWord(string) {
+
+//   let longestWord = "";
+//   let normalizedString = string.split(" ");
+//   for (const str of normalizedString) {
+//     if (str.length > longestWord.length) {
+//       longestWord = str;
+//     }
+//   }
+
+//   return longestWord;
+
+// }
+// console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+// console.log(findLongestWord("Google do a roll"));
+//// Поиск самого длинного слова в строке без sort() /////
+
+// Дополни код функции createArrayOfNumbers(min, max) так,
+//чтобы она возвращала массив всех целых чисел от значения min до max.
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   for (let i = min; i <= max; i += 1) {
+//     numbers.push(i);
+//   }
+//   return numbers;
+// }
+// console.log(createArrayOfNumbers(29, 34));
+// Дополни код функции createArrayOfNumbers(min, max) так,
+//чтобы она возвращала массив всех целых чисел от значения min до max.
+
+// Задание на пуш определенных элементов массива в новый массив
+
+// function filterArray(numbers, value) {
+//   const bigValue = [];
+//   for (const number of numbers) {
+//     if (number > value) {
+//       bigValue.push(number);
+//     }
+//   }
+//   return bigValue;
+// }
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// Задание на пуш определенных элементов массива в новый массив
+
+// Напиши функцию getCommonElements(array1, array2) которая
+//получает два массива произвольной длины в параметры array1 и array2, и
+//возвращает новый массив, состоящий из тех элементов, которые присутствуют в
+//обоих исходных массивах.
+function getCommonElements(array1, array2) {
+  const uniceElements = [];
+
+  for (const element of array1) {
+    if (array2.includes(element)) {
+      uniceElements.push(element);
+    }
+  }
+  return uniceElements;
 }
-
-console.log(formatMessage("Curabitur ligula sapien", 23));
-console.log(formatMessage("Vestibulum facilisis purus nec", 20));
-console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15));
+console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
+// Напиши функцию getCommonElements(array1, array2) которая
+//получает два массива произвольной длины в параметры array1 и array2, и
+//возвращает новый массив, состоящий из тех элементов, которые присутствуют в
+//обоих исходных массивах.xw
