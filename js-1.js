@@ -292,19 +292,59 @@
 //получает два массива произвольной длины в параметры array1 и array2, и
 //возвращает новый массив, состоящий из тех элементов, которые присутствуют в
 //обоих исходных массивах.
-function getCommonElements(array1, array2) {
-  const uniceElements = [];
+// function getCommonElements(array1, array2) {
+//   const uniceElements = [];
 
-  for (const element of array1) {
-    if (array2.includes(element)) {
-      uniceElements.push(element);
-    }
-  }
-  return uniceElements;
-}
-console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
-console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
+//   for (const element of array1) {
+//     if (array2.includes(element)) {
+//       uniceElements.push(element);
+//     }
+//   }
+//   return uniceElements;
+// }
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+// console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
 // Напиши функцию getCommonElements(array1, array2) которая
 //получает два массива произвольной длины в параметры array1 и array2, и
 //возвращает новый массив, состоящий из тех элементов, которые присутствуют в
 //обоих исходных массивах.xw
+
+// Поиск элементов в массив от start до end
+// function getEvenNumbers(start, end) {
+//   // Пиши код ниже этой строки
+//   const correctArr = [];
+//   for (let i = start; i <= end; i += 1) {
+//     if (i % 2 === 0) {
+//       correctArr.push(i);
+//     }
+//   }
+//   return correctArr;
+//   // Пиши код выше этой строки
+// }
+// console.log(getEvenNumbers(6, 12));
+// console.log(getEvenNumbers(8, 8));
+// // Поиск элементов в массив от start до end
+
+//Напиши функцию includes(array, value),
+// которая делает тоже самое, что и метод массива массив.includes(значение) - проверяет, есть ли в массиве array значение value,
+// возвращая true если есть и false в противном случае.
+// function includes(array, value) {
+
+//   for (const arr of array) {
+//     if (arr === value) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+// console.log(includes([1, 2, 3, 4, 5], 3));
+// console.log(includes([1, 2, 3, 4, 5], 17));
+// console.log(
+//   includes(["Земля", "Марс", "Венера", "Юпитер", "Сатурн"], "Юпитер")
+// ); // возвращает true.
+// console.log(includes(["Земля", "Марс", "Венера", "Юпитер", "Сатурн"], "Уран"));
+// console.log(includes(["яблоко", "слива", "груша", "апельсин"], "слива"));
+// console.log(includes(["яблоко", "слива", "груша", "апельсин"], "киви"));
+////Напиши функцию includes(array, value),
+// которая делает тоже самое, что и метод массива массив.includes(значение) - проверяет, есть ли в массиве array значение value,
+// возвращая true если есть и false в противном случае.
