@@ -26,12 +26,3 @@ const apartment = {
 // console.log(numberOfTags);
 // console.log(firstTag);
 // console.log(lastTag);
-
-const buttonRef = document.querySelector(".button-js");
-console.log(buttonRef);
-buttonRef.addEventListener("click", () => {
-  buttonRef.textContent = "запрос отправлен";
-  buttonRef.src =
-    "https://pipcat.ru/wp-content/uploads/2016/12/563ef3ddf9b90e12f4b495c81.jpg";
-  console.log("запрос на добавление в друзья отправлен");
-});
