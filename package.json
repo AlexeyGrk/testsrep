@@ -1,0 +1,28 @@
+{
+  "name": "testsrep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js-1-2-hm.js",
+  "scripts": {
+    "voice": "echo hello Alex",
+    "dev": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexeyGrk/testsrep.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexeyGrk/testsrep/issues"
+  },
+  "homepage": "https://github.com/AlexeyGrk/testsrep#readme",
+  "dependencies": {
+    "siema": "^1.5.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
