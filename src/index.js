@@ -5,7 +5,7 @@
 // };
 import Siema from "siema";
 const mySiema = new Siema({
-  duration: 1500,
+  duration: 1000,
   perPage: 1,
   startIndex: 0,
   draggable: true,
