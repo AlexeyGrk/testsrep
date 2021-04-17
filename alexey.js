@@ -1,1 +1,0 @@
-const min = 10;
