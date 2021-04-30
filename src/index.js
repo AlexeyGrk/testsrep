@@ -1,3 +1,9 @@
+// import notification from "./nadoedalka";
+import date from "./changer-color";
+
+// setTimeout(() => {
+//   modal.hide();
+// }, 10000);
 // const nClassin = new Class("Anakonda");
 
 // const arrowFn = () => {
@@ -14,16 +20,19 @@
 // });
 // document.querySelector(".prev").addEventListener("click", () => mySiema.prev());
 // document.querySelector(".next").addEventListener("click", () => mySiema.next());
-const namesObj = {
-  name1: "Alexey",
-  name2: "Bobby",
-  name3: "Anna",
-  name4: "Vlad",
-};
-const saveNamesUsers = JSON.stringify(namesObj);
 
-const parseObjNamesUsers = JSON.parse(saveNamesUsers);
-// console.log(parseObjNamesUsers);
-localStorage.setItem("data", JSON.stringify(parseObjNamesUsers));
+// const PROMT_DELAY = 2000;
+// const MAX_PROMT_ATTEMPS = 4;
 
-console.log(JSON.parse(localStorage.getItem("data")));
+// let promtAttemp = 0;
+// const hasSubscribed = false;
+
+// const intervalID = setInterval(() => {
+//   if (promtAttemp === MAX_PROMT_ATTEMPS || hasSubscribed) {
+//     console.log("Stop attemp ");
+//     clearInterval(intervalID);
+//     return;
+//   }
+//   console.log("Sub for our mail" + Date.now());
+//   promtAttemp += 1;
+// }, PROMT_DELAY);
