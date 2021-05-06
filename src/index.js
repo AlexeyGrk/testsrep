@@ -1,5 +1,6 @@
 // import notification from "./nadoedalka";
-import date from "./changer-color";
+// import date from "./changer-color";
+import timer from "./timer";
 
 // setTimeout(() => {
 //   modal.hide();
