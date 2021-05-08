@@ -1,3 +1,4 @@
+import debounce from "lodash.debounce";
 const refs = {
   inputnRef: document.querySelector(".input-country-js"),
 };
@@ -9,6 +10,9 @@ function fetchCountry(countryName) {
     }
   );
 }
-refs.inputnRef.addEventListener("input", (e) => {
-  console.log(refs.inputnRef.value);
-});
+refs.inputnRef.addEventListener(
+  "input",
+  debounce((e) => {
+    console.log(refs.inputnRef.value);
+  }, 500)
+);

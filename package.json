@@ -21,6 +21,7 @@
   "homepage": "https://github.com/AlexeyGrk/testsrep#readme",
   "dependencies": {
     "bootstrap.native": "^3.0.15-alpha2",
+    "lodash.debounce": "^4.0.8",
     "siema": "^1.5.1"
   },
   "devDependencies": {
