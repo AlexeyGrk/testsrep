@@ -46,6 +46,7 @@ function succesCountry(data) {
     renderCountryCardList(data);
     return;
   }
+
   landError();
   clearMarkup();
   return;
@@ -57,6 +58,7 @@ function landError() {
     text: "Too many matches found. Please enter a more specific query!",
   });
 }
+
 function clearMarkup() {
   refs.cardList.innerHTML = "";
 }
