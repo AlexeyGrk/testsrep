@@ -18,8 +18,6 @@ function fetchCountryByName(searchQuery) {
   );
 }
 
-refs.inputnRef.addEventListener("input", debounce(onSearch, 500));
-
 function renderCountryCardList(countres) {
   const markup = cardListCountryTpm(countres);
   refs.cardList.insertAdjacentHTML("beforeend", markup);
@@ -52,6 +50,7 @@ function succesCountry(data) {
   clearMarkup();
   return;
 }
+refs.inputnRef.addEventListener("input", debounce(onSearch, 500));
 
 function landError() {
   error({
