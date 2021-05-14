@@ -2,6 +2,7 @@
 // import date from "./changer-color";
 // import timer from "./timer";
 // import httptry from "./http-try";
+import axios from "axios";
 
 // setTimeout(() => {
 //   modal.hide();
