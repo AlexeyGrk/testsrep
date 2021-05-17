@@ -3,6 +3,7 @@
 // import timer from "./timer";
 // import httptry from "./http-try";
 import axios from "axios";
+import test from "./test-http";
 
 // setTimeout(() => {
 //   modal.hide();
